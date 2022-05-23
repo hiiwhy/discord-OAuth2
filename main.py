@@ -98,7 +98,7 @@ async def set_certification(ctx: SlashContext,add_role):
                             label="認証",
                             style=ButtonType().Link,
                             disabled = False,
-                            url = f'https://discord.com/api/oauth2/authorize?client_id=974311604822867968&redirect_uri=https%3A%2F%2FRen-Zheng-Jun.roicpura.repl.co&response_type=code&scope=identify%20guilds.join&state={guild_id}'
+                            url = f'https://discord.com/api/oauth2/authorize?client_id={client_id}&redirect_uri={callback_url}&response_type=code&scope=identify%20guilds.join&state={guild_id}'
                             )
                         ]
                     )
